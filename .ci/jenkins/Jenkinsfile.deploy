@@ -369,6 +369,7 @@ void commitAndCreatePRIgnoringNpmRegistry(String repo, String buildBranch) {
 
 MavenCommand getMavenDefaultCommand() {
     MavenCommand mvnCmd = new MavenCommand(this, ['-fae', '-ntp']).withSettingsXmlId(env.MAVEN_SETTINGS_CONFIG_FILE_ID)
+    .printSettings()
     if (env.MAVEN_DEPENDENCIES_REPOSITORY) {
         mvnCmd.withDependencyRepositoryInSettings('deps-repo', env.MAVEN_DEPENDENCIES_REPOSITORY)
     }
