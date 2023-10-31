@@ -247,7 +247,8 @@ pipeline {
         cleanup {
             script {
                 // Clean also docker in case of usage of testcontainers lib
-                util.cleanNode('docker')
+                // util.cleanNode('docker')
+                cleanWs(disableDeferredWipeout: true)
             }
         }
     }
