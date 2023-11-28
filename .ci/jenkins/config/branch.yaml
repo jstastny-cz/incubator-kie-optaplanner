@@ -24,19 +24,19 @@ environments:
 disable:
   deploy: true
 repositories:
-- name: incubator-kie-optaplanner
+- name: optaplanner
   job_display_name: optaplanner
-- name: incubator-kie-optaplanner-quickstarts
+- name: optaplanner-quickstarts
   job_display_name: optaplanner-quickstarts
-  branch: 8.x
+  branch: push-privilege-8.x
 # Not migrated to Apache yet
 # - name: incubator-kie-optaplanner-website
 #   job_display_name: optaplanner-website
-- name: incubator-kie-benchmarks
+- name: kie-benchmarks
   job_display_name: kie-benchmarks
 git:
   author:
-    name: apache
+    name: jstastny-cz
     # Taken from https://ci-builds.apache.org/credentials/
     # Need to be verified
     credentials_id: 399061d0-5ab5-4142-a186-a52081fef742
