@@ -57,7 +57,7 @@ git:
   jenkins_config_path: .ci/jenkins
 buildchain_config:
   git:
-    repository: incubator-kie-optaplanner
+    repository: optaplanner
     file_path: .ci/buildchain-config.yaml
     token_credentials_id: kie-ci3-token
 maven:
